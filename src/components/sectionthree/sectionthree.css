@@ -1,0 +1,46 @@
+.section-three-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-three-text-container {
+    width: 50%;
+    order: 1; /* Display the text container first */
+    margin-left: 10%;
+}
+
+.section-three-image-container {
+    width: 50%;
+    order: 2; /* Display the image container second */
+}
+.section-three-title{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.section-three-img {
+    width: 160%; /* Adjust the width as needed */
+    /* Set the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: -38%; /* Adjust margin as needed */
+}
+
+/* Media query for screens smaller than a certain width (e.g., 768px) */
+@media (max-width: 768px) {
+    .section-three-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .section-three-text-container,
+    .section-three-image-container {
+        width: 100%; /* Make both containers full width */
+
+        margin-left: 15%;/* Reset margin */
+    }
+}
+
+/* Media query for screens smaller than a certain width (e.g., 768px) */
+@media (max-width: 768px) {
+    .section-three-img {
+        max-width: 100%; /* Set max-width to 100% for mobile */
+    }
+}

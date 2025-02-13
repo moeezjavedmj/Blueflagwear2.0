@@ -1,0 +1,114 @@
+/* Styles for Product component */
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.product-card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card .product-info {
+    padding: 20px;
+}
+
+.product-card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-card .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styles for similar products section */
+
+.similar-products-container {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+    margin-top: 50px;
+}
+
+.similar-product-card {
+    flex: 0 0 auto;
+    width: 250px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.similar-product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.similar-product-card .product-info {
+    padding: 20px;
+}
+
+.similar-product-card h5 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.similar-product-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.similar-product-card .btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 100%;
+    }
+
+    .similar-products-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}

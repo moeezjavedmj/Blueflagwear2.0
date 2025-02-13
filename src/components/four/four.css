@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+.section-four-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.section-four-text-container {
+    width: 50%;
+    order: 1; /* Display the text container first */
+    margin-left: 10%;
+    margin-bottom:2em;
+}
+
+.section-four-image-container {
+    width: 50%;
+    order: 2; /* Display the image container second */
+}
+.description {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    padding-top: 5.6em;
+    padding-right: 6em;
+}
+/*.section-four-img {*/
+/*    width: 100%; !* Adjust the width as needed *!*/
+/*    max-width: 300px; !* Set the maximum width *!*/
+/*    height: auto; !* Maintain aspect ratio *!*/
+/*    margin-left: 20%; !* Adjust margin as needed *!*/
+/*}*/
+
+/* Media query for screens smaller than a certain width (e.g., 768px) */
+@media (max-width: 768px) {
+    .section-four-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+    .section-four-text-container,
+    .section-four-image-container {
+        width: 100%; /* Make both containers full width */
+        margin-left: 0; /* Reset margin */
+    }
+}
+
